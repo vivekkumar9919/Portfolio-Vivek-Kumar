@@ -9,7 +9,9 @@
   "version": "1.0.0",
   "description": "vivek kumar portfolio website",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
