@@ -1,9 +1,37 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react';
 
 export default function ContactSection() {
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    msg: ''
+  });
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:4000/api/addmsg', formData);
+      console.log(response.data);
+      alert("message send successfully!")
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+
   return (
     <>
-    {/* <!-- ======= Contact Section ======= --> */}
   <section id="contact" className="contact">
     <div className="container">
 
@@ -38,30 +66,26 @@ export default function ContactSection() {
         </div>
 
         <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-          <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+          <form  className="php-email-form" onSubmit={handleSubmit}>
             <div className="row">
               <div className="form-group col-md-6">
                 <label htmlFor="name">Your Name</label>
-                <input type="text" name="name" className="form-control" id="name" required/>
+                <input type="text" name="name" className="form-control" id="name" required value={formData.name} onChange={handleInputChange}/>
               </div>
               <div className="form-group col-md-6">
                 <label htmlFor="name">Your Email</label>
-                <input type="email" className="form-control" name="email" id="email" required/>
+                <input type="email" className="form-control" name="email" id="email" required value={formData.email} onChange={handleInputChange}/>
               </div>
             </div>
             <div className="form-group">
               <label htmlFor="name">Subject</label>
-              <input type="text" className="form-control" name="subject" id="subject" required/>
+              <input type="text" className="form-control" name="subject" id="subject" required value={formData.subject}  onChange={handleInputChange}/>
             </div>
             <div className="form-group">
               <label htmlFor="name">Message</label>
-              <textarea className="form-control" name="message" rows="10" required></textarea>
+              <textarea className="form-control" name="msg"  rows="10" required value={formData.msg} onChange={handleInputChange}></textarea>
             </div>
-            <div className="my-3">
-              <div className="loading">Loading</div>
-              <div className="error-message"></div>
-              <div className="sent-message">Your message has been sent. Thank you!</div>
-            </div>
+
             <div className="text-center"><button type="submit">Send Message</button></div>
           </form>
         </div>
@@ -70,7 +94,7 @@ export default function ContactSection() {
 
     </div>
   </section>
-  {/* <!-- End Contact Section --> */}
+
     </>
   )
 }
