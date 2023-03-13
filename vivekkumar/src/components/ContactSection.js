@@ -13,7 +13,7 @@ export default function ContactSection() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/api/addmsg', formData);
+      const response = await axios.post('https://portfolio-api-353q.onrender.com', formData);
       console.log(response.data);
       alert("message send successfully!")
     } catch (error) {
