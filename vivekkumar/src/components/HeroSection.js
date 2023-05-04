@@ -20,7 +20,7 @@ export default function HeroSection() {
           </Typed>  </p>
 
           {/* button html start */}
-          <a href="https://drive.google.com/file/d/1DckrrdVTc3BjZc_ZwdZcYWyxD_AI-xZN/view?usp=sharing" download><div data-tooltip="Size: 10kb" className="button">
+          <a href="https://drive.google.com/file/d/1TdWV5huDuBevL-7A3sLwzT_IgsUogjwi/view?usp=share_link" download><div data-tooltip="Size: 10kb" className="button">
             <div className="button-wrapper  d-flex">
               <div className="text" >Resume</div>
                 <span className="icon">
