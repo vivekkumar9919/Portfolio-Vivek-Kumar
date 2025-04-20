@@ -46,7 +46,7 @@ export default function AboutSection() {
             </div>
           </div>
           <p>
-            I am eager to associate myself with an organization where I can utilize my skills in the best possible manner and contribute to its success. If you're interested in working with me, please feel free to get in touch. Thank you for visiting my portfolio website, and I look forward to connecting with you!
+          I'm always eager to take on new challenges and contribute to the growth of a dynamic team. If you're interested in working with me or discussing potential opportunities, feel free to get in touch. Thank you for visiting my portfolio, and I look forward to connecting with you!
           </p>
         </div>
       </div>
