@@ -11,10 +11,11 @@ export default function SkillSection() {
 
           <div className="section-title">
             <h2>Skills</h2>
+            {/* <h2>🛠 My Toolbox</h2> */}
             <p>The greatest skill you can possess is the ability to learn and adapt to change. In today's fast-paced world, everything is constantly evolving, and those who can quickly learn new skills and adapt to new situations are the ones who will thrive. Skill is not just about what you know, but how quickly you can learn and apply new knowledge.</p>
           </div>
 
-          <div className="row skills-content">
+          {/* <div className="row skills-content">
 
             <div className="col-lg-6" data-aos="fade-up">
 
@@ -144,6 +145,38 @@ export default function SkillSection() {
 
             </div>
 
+          </div> */}
+          <div id="my-toolbox" >
+            <table>
+              <thead>
+                <tr>
+                  <th>Languages</th>
+                  <th>Databases</th>
+                  <th>Tools & Infra</th>
+                  <th>Dev Practices</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Python 🐍</td>
+                  <td>MongoDB 🍃</td>
+                  <td>Docker 🐳, Kafka ⚡</td>
+                  <td>Logging, Monitoring</td>
+                </tr>
+                <tr>
+                  <td>JS (React) ⚛️</td>
+                  <td>Redis 🚀</td>
+                  <td>Zookeeper, Git, Postman</td>
+                  <td>CI/CD, Test Suites</td>
+                </tr>
+                <tr>
+                  <td>Bash 🖥️</td>
+                  <td>PostgreSQL / MySQL (learning)</td>
+                  <td>Coralogix, pyenv</td>
+                  <td>Code Reviews</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
 
         </div>

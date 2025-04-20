@@ -9,10 +9,16 @@ export default function AboutSection() {
 
       <div className="section-title">
         <h2>About</h2>
-        <p>Welcome to my portfolio website! My name is Vivek Kumar, and I am a focused and driven Computer Science and Engineering student currently attending Feroze Gandhi Institute of Engineering and Technology in Raebareli.</p>
-        <p>As a beginner in the field of Information Technology, I am passionate about leveraging my skills to contribute to the development of an organization while growing in my career journey. I am committed to continuous learning and improvement, and I strive to keep myself updated with the latest trends and technologies in the industry</p>
-        <p>I believe that communication, critical thinking, and problem-solving skills are essential for success in any field, and I have honed these skills through my academic pursuits and practical experience. I am proficient in a range of programming languages and web development tools, including HTML, CSS, JavaScript, React.js/Vue.js, Node.js, Express.js, and MongoDB. I am also proficient in using Git, a version control system for software development</p>
-        <p></p>
+        <ul>
+          <li><strong>Backend Developer</strong> focused on building <strong>scalable</strong>, <strong>efficient</strong>, and <strong>reliable systems</strong>.</li>
+          <li>Proficient in <strong>Python</strong>, <strong>Node.js</strong>, <strong>MongoDB</strong>, <strong>Redis</strong>, and <strong>Docker</strong> for creating robust backend architectures.</li>
+          <li>Experienced in <strong>optimizing data flows</strong>, improving query performance, and handling large datasets effectively.</li>
+          <li>Skilled in <strong>debugging</strong>, implementing <strong>observability</strong>, and using tools like <strong>Coralogix</strong> for proactive issue resolution.</li>
+          <li>Deep understanding of <strong>Domain-Driven Design (DDD)</strong> and microservices, with a strong focus on <strong>clean, maintainable code</strong>.</li>
+          <li>Collaborates cross-functionally with <strong>product teams</strong> and <strong>infrastructure teams</strong> to deliver seamless and scalable solutions.</li>
+          <li>Passionate about learning and improving — currently exploring <strong>React</strong> for full-stack development and deepening my knowledge of <strong>relational databases</strong>.</li>
+          <li>Constantly building <strong>side projects</strong>, experimenting with new technologies, and refining my skill set to stay at the cutting edge of backend development.</li>
+        </ul>
       </div>
 
       <div className="row">
@@ -20,7 +26,7 @@ export default function AboutSection() {
           <img src={require('../img/vivekkumar.jpeg')} className="img-fluid" alt=""/>
         </div>
         <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Full Stack Developer</h3>
+          <h3>Software Developer</h3>
           <div className="row">
             <div className="col-lg-6">
               <ul>
