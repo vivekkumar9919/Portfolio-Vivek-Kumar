@@ -12,6 +12,35 @@ export default function ResumeSection() {
       </div>
 
       <div className="row">
+      <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 className="resume-title">Professional Experience</h3>
+          <div className="resume-item">
+            <h4>Software Development Engineer</h4>
+            <h5>2023 Sept - Present</h5>
+            <p><em>Fynd (Shopsense Retail Technologies Limited)</em></p>
+            <ul>
+              <li>Designed and developed scalable backend systems, optimizing processes to support high-volume data and improve system efficiency.</li>
+              <li>Focused on performance improvement through query optimization, ensuring faster data processing and enhanced system responsiveness.</li>
+              <li>Refactored and modernized legacy systems to improve code quality, scalability, and long-term maintainability.</li>
+              <li>Worked on implementing robust logging and monitoring solutions to improve visibility and identify issues proactively.</li>
+              <li>Played a key role in improving system reliability and ensuring that business operations run smoothly.</li>
+              <li>Contributed to the growth of the team by sharing knowledge and improving team processes.</li>
+            </ul>
+          </div> 
+          <div className="resume-item">
+            <h4>Full stack with javascript</h4>
+            <h5>2022 Aug - 2022 Nov</h5>
+            <p><em>Fynd Academy</em></p>
+            <ul>
+              <li>3 months training in Full stack with javascript</li>
+              <li>Learn MongoDB, Express, Vuejs, Nodejs </li>
+              <li>I developed two minor projects during your training - Typing Master and E-commerce website Technostore - as well as one major project called Coding Profile Manager</li>
+              
+            </ul>
+          </div>
+
+
+        </div>
         <div className="col-lg-6" data-aos="fade-up">
           {/* <!-- <h3 className="resume-title">Sumary</h3> --> */}
           {/* <!-- <div className="resume-item pb-0">
@@ -44,32 +73,6 @@ export default function ResumeSection() {
             <p><em>Aps Aditya Public School cholapur Varanasi</em></p>
             <p>Passed with CGPA :- 8.8</p>
           </div>
-        </div>
-        <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3 className="resume-title">Professional Experience</h3>
-          <div className="resume-item">
-            <h4>Full stack with javascript</h4>
-            <h5>2022 Aug - 2022 Nov</h5>
-            <p><em>Fynd Academy</em></p>
-            <ul>
-              <li>3 months training in Full stack with javascript</li>
-              <li>Learn MongoDB, Express, Vuejs, Nodejs </li>
-              <li>I developed two minor projects during your training - Typing Master and E-commerce website Technostore - as well as one major project called Coding Profile Manager</li>
-              
-            </ul>
-          </div>
-          {/* <!-- <div className="resume-item">
-            <h4>Graphic design specialist</h4>
-            <h5>2017 - 2018</h5>
-            <p><em>Stepping Stone Advertising, New York, NY</em></p>
-            <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-            </ul>
-          </div> --> */}
-
         </div>
       </div>
 
